@@ -31,4 +31,14 @@ let toAmount = currency[userAnswer.to];
 let Amount = userAnswer.Amount;
 let baseAmount = Amount / fromAmount;
 let convertedAmount = baseAmount * toAmount;
-console.log(convertedAmount.toFixed(2));
+console.log(`Converted amount: ${convertedAmount.toFixed(2)}`);
+let repeatAnswer = await inquirer.prompt([
+    {
+        name: "repeat",
+        message: "Do you want to convert again?",
+        type: "confirm",
+    },
+]);
+if (repeatAnswer.repeat) {
+    await userAnswer();
+}
