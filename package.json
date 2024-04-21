@@ -1,5 +1,5 @@
 {
-  "name": "cli-currency-convertor",
+  "name": "kapil-cli-currency-convertor",
   "version": "1.0.0",
   "description": "A CLI Based Currency Conertor Using Typescript , Nodejs and inquirer.",
   "main": "index.js",
